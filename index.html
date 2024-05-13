@@ -120,14 +120,14 @@
 
                 // メッセージを組み立て
                 var messageText = `予約情報：
-                お泊りの日程: ${formData.stayDate}
-                体育館を使用する日程: ${formData.gymDate}
-                希望場所: ${formData.desiredLocation}
-                中学生以上の人数: ${formData.adultsCount}
-                小学生以下の人数: ${formData.childrenCount}
-                1人あたりの予算: ${formData.budgetPerPerson}
-                個室必要有無: ${formData.privateRoom}
-                チャーターバスの必要有無: ${formData.bus}`;
+お泊りの日程: ${formData.stayDate}
+体育館を使用する日程: ${formData.gymDate}
+希望場所: ${formData.desiredLocation}
+中学生以上の人数: ${formData.adultsCount}
+小学生以下の人数: ${formData.childrenCount}
+1人あたりの予算: ${formData.budgetPerPerson}
+個室必要有無: ${formData.privateRoom}
+チャーターバスの必要有無: ${formData.bus}`;
 
                 // LINEにメッセージを送信
                 sendText(messageText);
