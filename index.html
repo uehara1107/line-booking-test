@@ -26,10 +26,10 @@
 
 </head>
 
-<body>
+<body style="width: 100%;">
 
     <div class="flex justify-center min-h-screen bg-mainColor">
-        <div class="w-full max-w-5xl bg-white p-5">
+        <div class="w-full max-w-5xl sm:max-w-full bg-white p-5">
             <!-- 画像 -->
             <div class="flex justify-center">
                 <img src="eyecatch.svg" alt="eye-catch svg" class="container">
@@ -39,41 +39,41 @@
                 <h1 class="text-5xl kiwi-maru-regular">予約サイト</h1>
             </div>
             <form id="bookingForm">
-                <div class="mt-12 ml-28 text-start text-2xl kiwi-maru-regular grid grid-cols-5 gap-3">
-                    <div class="mt-2 col-start-2 col-span-4 underline decoration-4 decoration-[#65bac8]/30">お泊りの日程</div>
-                    <input name="stayDate" type="date" class="mt-3 items-center col-start-3 col-span-2 pr-[80px]">
-                    <div class="mt-5 col-start-2 col-span-4 underline decoration-4 decoration-[#65bac8]/30">体育館を使用する日程
+                <div class="mt-12 lg:ml-28 text-start lg:*:text-2xl kiwi-maru-regular grid grid-cols-5 gap-3">
+                    <div class="mt-2 lg:col-start-2 col-span-4 underline decoration-4 decoration-[#65bac8]/30">お泊りの日程</div>
+                    <input name="stayDate" type="date" class="mt-3 items-center lg:col-start-3 col-start-4 col-span-2 lg:pr-[80px]">
+                    <div class="mt-5 lg:col-start-2 col-span-4 underline decoration-4 decoration-[#65bac8]/30">体育館を使用する日程
                     </div>
-                    <input name="useGymDate" type="date" class="mt-4 items-center col-start-3 col-span-2 pr-[80px]">
-                    <div class="mt-2 col-start-2 col-span-4 underline decoration-4 decoration-[#65bac8]/30">希望場所</div>
+                    <input name="useGymDate" type="date" class="mt-4 items-center lg:col-start-3 col-start-4 col-span-2 lg:pr-[80px]">
+                    <div class="mt-2 lg:col-start-2 col-span-4 underline decoration-4 decoration-[#65bac8]/30">希望場所</div>
                     <input name="locate" type="text"
-                        class="mt-4 items-center col-start-3 col-span-2 border-2 border-solid border-[#2f2e41] rounded-lg"
+                        class="mt-4 items-center col-start-3 lg:col-span-2 col-span-3 border-2 border-solid border-[#2f2e41] rounded-lg text-center"
                         placeholder="ご希望場所を入力">
-                    <div class="mt-2 col-start-2 col-span-2 underline decoration-4 decoration-[#65bac8]/30">
+                    <div class="mt-2 lg:col-start-2 lg:col-span-2 col-span-5 underline decoration-4 decoration-[#65bac8]/30">
                         中学生以上の人数<span class="text-sm"> ※半角数字入力</span></div>
                     <input name="adultsCount" type="number"
-                        class="mt-4 items-center col-start-3 col-span-1 border-2 border-solid border-[#2f2e41] rounded-lg">
-                    <div class="mt-2 col-start-2 col-span-2 underline decoration-4 decoration-[#65bac8]/30">
+                        class="mt-4 items-center lg:col-start-3 col-start-5 col-span-1 border-2 border-solid border-[#2f2e41] rounded-lg">
+                    <div class="mt-2 lg:col-start-2 lg:col-span-2 col-span-5 underline decoration-4 decoration-[#65bac8]/30">
                         小学生以下の人数<span class="text-sm"> ※半角数字入力</span></div>
                     <input name="childrenCount" type="number"
-                        class="mt-4 items-center col-start-3 col-span-1 border-2 border-solid border-[#2f2e41] rounded-lg">
-                    <div class="mt-2 col-start-2 col-span-4 underline decoration-4 decoration-[#65bac8]/30">1人あたりの予算
+                        class="mt-4 items-center lg:col-start-3 col-start-5 col-span-1 border-2 border-solid border-[#2f2e41] rounded-lg">
+                    <div class="mt-2 lg:col-start-2 col-span-4 underline decoration-4 decoration-[#65bac8]/30">1人あたりの予算
                     </div>
                     <input name="budgetPerPerson" type="text"
-                        class="mt-4 items-center col-start-3 col-span-2 border-2 border-solid border-[#2f2e41] rounded-lg"
+                        class="mt-4 items-center col-start-3 lg:col-span-2 col-span-3 border-2 border-solid border-[#2f2e41] rounded-lg text-center"
                         placeholder="ご予算を入力">
-                    <div class="mt-2 col-start-2 col-span-4 underline decoration-4 decoration-[#65bac8]/30">個室必要有無</div>
-                    <div class="mt-4 items-center col-start-3"><input type="radio" value="希望" name="p-room"><label
+                    <div class="mt-2 lg:col-start-2 col-span-4 underline decoration-4 decoration-[#65bac8]/30">個室必要有無</div>
+                    <div class="mt-4 items-center lg:col-start-3 col-start-4"><input type="radio" value="希望" name="p-room"><label
                             for="希望">必要</label></div>
                     <div class="mt-4 items-center"><input type="radio" value="不要" name="p-room"><label
                             for="不要">不要</label></div>
-                    <div class="mt-2 col-start-2 col-span-4 underline decoration-4 decoration-[#65bac8]/30">チャーターバスの必要有無
+                    <div class="mt-2 lg:col-start-2 col-span-4 underline decoration-4 decoration-[#65bac8]/30">チャーターバスの必要有無
                     </div>
-                    <div class="mt-4 items-center col-start-3"><input type="radio" value="希望" name="bus"><label
+                    <div class="mt-4 items-center lg:col-start-3 col-start-4"><input type="radio" value="希望" name="bus"><label
                             for="希望">必要</label></div>
-                    <div class="mt-4 items-center col-span-2"><input type="radio" value="不要" name="bus"><label
+                    <div class="mt-4 items-center"><input type="radio" value="不要" name="bus"><label
                             for="不要">不要</label></div>
-                    <div class="mt-4 ml-32 col-start-4 col-span-2 text-white font-medium text-3xl"><button type="submit"
+                    <div class="mt-4 lg:ml-32 lg:col-start-4 lg:col-span-2 col-span-5 text-white font-medium lg:text-3xl justify-end flex"><button type="submit"
                             class="bg-mainColor px-6 py-2 rounded-xl hover:shadow-xl">予約する</button></div>
                 </div>
             </form>
@@ -150,10 +150,10 @@
 
         $(function () {
             $('form').submit(function () {
-                const stayDate    = $('input[name="stayDate"]').val();
+                const stayDate = $('input[name="stayDate"]').val();
                 const useGymDate = $('input[name="useGymDate"]').val();
-                const locate  = $('input[name="locate"]').val();
-                const adultsCount  = $('input[name="adultsCount"]').val();
+                const locate = $('input[name="locate"]').val();
+                const adultsCount = $('input[name="adultsCount"]').val();
                 const childrenCount = $('input[name="childrenCount"]').val();
                 const budgetPerPerson = $('input[name="budgetPerPerson"]').val();
                 const pRoom = $('input[name="p-room"]:checked').val();
